@@ -84,9 +84,7 @@ public final class AtomicOptionalProperty<T> {
   }
   
   public init(_ value: T){
-    SyncQueue.queues[qIdx].execute_sync{
-      self._value = value
-    }
+    self._value = value
   }
 }
 
