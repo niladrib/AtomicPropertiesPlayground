@@ -30,11 +30,11 @@ extension ExecutableQueue{
 enum SyncQueue: String, ExecutableQueue {
   static let queues:[SyncQueue] = [.Q1, .Q2, .Q3, .Q4, .Q5]
   
-  case Q1 = "com.bcdevices.Sentien2.Q1"
-  case Q2 = "com.bcdevices.Sentien2.Q2"
-  case Q3 = "com.bcdevices.Sentien2.Q3"
-  case Q4 = "com.bcdevices.Sentien2.Q4"
-  case Q5 = "com.bcdevices.Sentien2.Q5"
+  case Q1 = "com.xxx.Q1"
+  case Q2 = "com.xxx.Q2"
+  case Q3 = "com.xxx.Q3"
+  case Q4 = "com.xxx.Q4"
+  case Q5 = "com.xxx.Q5"
   
   private static func _qCreate(q:SyncQueue) -> dispatch_queue_t {
     return dispatch_queue_create(q.rawValue, DISPATCH_QUEUE_SERIAL)
